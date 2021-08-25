@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "firebase": "^8.10.0",
+    "gsap": "^3.7.1",
+    "three": "^0.131.3",
+    "three-buffer-geometry-utils": "^1.0.0",
+    "three-orbit-controls": "^82.1.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"

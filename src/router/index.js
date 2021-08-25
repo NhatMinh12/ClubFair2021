@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Loader from '../components/Loader.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/loader',
     name: 'Home',
-    component: Home
+    component: Loader
   },
   {
-    path: '/about',
+    path: '/',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
