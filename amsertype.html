@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="amsertype.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <p class="title">Which type of Amser are you?</p>
+        <div id="question" class="question"></div>
+        <div id="picContainer">
+            <div>
+                <label class="option">
+                    <input type="radio" name="option" value="1" />
+                    <img src="" class="option1"></img>
+                </label>
+                <label class="option">
+                    <input type="radio" name="option" value="2" />
+                    <img src="" class="option2"></img>
+                </label>
+            </div>
+            <div>
+                <label class="option">
+                    <input type="radio" name="option" value="3" />
+                    <img src="" class="option3"></img>
+                </label>
+                <label class="option">
+                    <input type="radio" name="option" value="4" />
+                    <img src="" class="option4"></img>
+                </label>
+            </div>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+
+    <div class="result"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="amsertype.js"></script>
+</body>
+
+</html>

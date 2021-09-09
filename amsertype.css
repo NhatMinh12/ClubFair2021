@@ -1,0 +1,312 @@
+@font-face {
+    font-family: Be_Vietnam;
+    src: url(./Be_Vietnam/BeVietnam-Medium.ttf);
+}
+@font-face {
+    font-family: Be_Vietnam_Bold;
+    src: url(./Be_Vietnam/BeVietnam-Bold.ttf);
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Be_Vietnam;
+    font-weight: 100;
+    line-height: 1.7rem;
+    background: rgb(207, 202, 197);
+    max-height: 700px;
+}
+
+.quiz-container {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px white;
+    padding: 3rem;
+    text-shadow: 0 1px #00000010;
+    width: 60%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(250deg, #ff934f, #db222a);
+    min-height: 100vh;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: black;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Be_Vietnam_Bold;
+}
+
+.question {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+}
+
+.option {
+    padding: 1rem;
+    color: #00000095;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    border-radius: 5px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.option input:checked .option {
+    background: #08038c;
+    color: #000;
+}
+
+.controls > * {
+    margin: 1rem;
+}
+
+
+button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+    outline: none;
+    transform: scale(0.98);
+    transition: all 0.2s;
+}
+
+button.previous {
+    background: #c84630;
+}
+
+button.next {
+    background: #3c91e6;
+}
+
+button.restart {
+    background: #0cf574;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.4s;
+}
+
+button.restart:hover {
+    color: #00000098;
+}
+
+button:hover, button:focus {
+    transform: scale(1);
+    font-weight: 500;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    min-height: 100vh;
+}
+
+.final-score {
+    color: #00000099;
+}
+
+.summary {
+    font-size: 1rem;
+    text-shadow: 1px 1px #ffffff50;
+    color: #00000099;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.summary h1 {
+    align-self: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+input{
+    margin-right: 10px;
+    margin-left: 0;
+}
+@media only screen and (max-width: 1086px) { 
+    img{
+        width: 170px;
+        height: 170px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    img{
+        width: 160px;
+        height: 160px;
+    }
+}
+@media only screen and (max-width: 955px) {
+    img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    img{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 870px) {
+    img{
+        width: 110px;
+        height: 110px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    img{
+        width: 99px;
+        height: 99px;
+    }
+}
+@media only screen and (max-width: 645px) {
+    img{
+        width: 85px;
+        height: 85px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    img{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    img{
+        width: 61px;
+        height: 61px;
+    }
+}
+@media only screen and (max-width: 522px) {
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 483px) {
+    img{
+        width: 41px;
+        height: 41px;
+    }
+}
+@media only screen and (max-width: 454px) {
+    img{
+        width: 34px;
+        height: 34px;
+    }
+}
+@media only screen and (max-width: 1220px) {
+    .title{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 1008px) {
+    .title{
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 881px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .question{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 796px) {
+    .title{
+        font-size: 1.2rem;
+    }
+    .question{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    .title{
+        font-size: 1.1rem;
+    }
+    .question{
+        font-size: .99rem;
+    }
+}
+@media only screen and (max-width: 627px) {
+    .title{
+        font-size: 1rem;
+    }
+    .question{
+        font-size: .95rem;
+    }
+}
+@media only screen and (max-width: 585px) {
+    .title{
+        font-size: .99rem;
+        margin-bottom: 0;
+    }
+    .question{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .title{
+        font-size: .92rem;
+        margin-bottom: 0;
+    }
+    .question{
+        font-size: .85rem;
+    }
+}
+@media only screen and (max-width: 565px) {
+    .controls > *{
+        margin: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .title{
+        font-size: .9rem;
+    }
+    .question{
+        font-size: .83rem;
+    }
+}
+
+#picContainer div{
+    display: flex;
+    margin-bottom: 10px;
+}
+#picContainer > div > *{
+    margin-right: 10px;
+}
