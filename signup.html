@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+    <center>
+        <div class="SignUp">
+            <form id="content" action="#">
+                <h2 class="note">Sign Up for Club Fair 2021</h2>
+                <div class="input-component">
+                    <input id="email" class="input" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-component">
+                    <input id="username" class="input" type="text" name="username" placeholder="Họ và tên">
+                </div>
+                <div class="input-component">
+                    <input id="pwInput" class="input" type="text" name="number" placeholder="Số điện thoại">
+                </div>
+                <div class="input-component">
+                    <input id="cfInput" class="input" type="text" name="class" placeholder="Lớp ">
+                </div> <br>
+                <input id="create-button" type="submit" value="Sign Up"></input>
+            </form>
+        </div>
+    </center>
+
+
+    <script src="./signup.js"></script>
+</body>
+
+</html>
