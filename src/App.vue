@@ -1,32 +1,38 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <router-view/>
 </template>
 
+<script>
+import * as THREE from 'three';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+import { BasisTextureLoader } from "three/examples/jsm/loaders/BasisTextureLoader.js"
+import { fetchLogoURLS, fetchClubData, users, sportsData } from '@/firebase'
+import { gsap, Power4, Back, Power0 } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Vue from 'vue'
+gsap.registerPlugin(ScrollTrigger);
+import img from '@/assets/gradient.jpg';
+export default {
+  name: 'App',
+ 
+}
+</script>
+
+
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
 }
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.btn .correct {
+ --hue: var(--hue-correct) !important;
+  color: black;
+}
+.btn .wrong {
+   --hue: var(--hue-wrong) !important;
 }
 </style>
